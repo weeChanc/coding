@@ -6,7 +6,7 @@ import java.lang.reflect.Proxy;
 
 
 /**
- * Created by îñ¸ç on 2018/4/23.
+ * Created by é“–å“¥ on 2018/4/23.
  */
 
 
@@ -24,8 +24,8 @@ public class U implements InvocationHandler {
         long startTime = System.currentTimeMillis();
         out = method.invoke(obj,args);
         if(out != null)
-            System.out.println(method.getName()+"·µ»ØÖµ: "+ out.toString());
-        System.out.println(obj.getClass().getName()+"  " + method.getName()+"ºÄÊ±: "+(System.currentTimeMillis()-startTime)+"ms");
+            System.out.println(method.getName()+"è¿”å›žå€¼: "+ out.toString());
+        System.out.println(obj.getClass().getName()+"  " + method.getName()+"è€—æ—¶: "+(System.currentTimeMillis()-startTime)+"ms");
         return out;
     }
 

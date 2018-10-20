@@ -28,7 +28,7 @@ public class PartitionLabels {
 }
 
 class Solution {
-    public List<Integer> partitionLabels(String S) {
-
-    }
+//    public List<Integer> partitionLabels(String S) {
+//
+//    }
 }
