@@ -1,6 +1,6 @@
-package com.wc.leecode.easy.e867;
+package com.wc.leecode.easy;
 
-public class Transpose {
+public class 转置矩阵867 {
     public static int[][] transpose(int[][] A) {
         int[][] B = new int[A[0].length][A.length];
         for(int i = 0 ; i < A.length ; i++){

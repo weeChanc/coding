@@ -1,18 +1,20 @@
-package com.wc.leecode.easy.e876;
+package com.wc.leecode.easy;
 
 import java.util.ArrayList;
 import java.util.List;
 
 
-class ListNode {
-    int val;
-    ListNode next;
-    ListNode(int x) {
-        val = x;
-    }
-}
+public class 链表中间节点 {
 
-public class MidlleLinklist {
+    static class ListNode {
+        int val;
+        ListNode next;
+        ListNode(int x) {
+            val = x;
+        }
+    }
+
+
     public static void main(String[] args) {
         ListNode node1 = new ListNode(1);
         ListNode node2 = new ListNode(2);

@@ -1,8 +1,5 @@
-package com.wc.leecode.easy.e189
+package com.wc.leecode.easy
 
-/**
- * Created by осёз on 2018/2/8.
- */
 class Solution189 {
     fun rotate(nums: IntArray, k: Int): Unit {
         var cur = 0

@@ -1,8 +1,6 @@
-package com.wc.leecode.easy.e26
+package com.wc.leecode.easy
 
-/**
- * Created by осёз on 2018/2/8.
- */
+
 class Solution26 {
     fun removeDuplicates(nums: IntArray): Int {
         var count = 0

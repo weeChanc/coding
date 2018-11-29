@@ -1,4 +1,4 @@
-package com.wc.leecode.middle.e763;
+package com.wc.leecode.middle;
 
 import java.util.List;
 
@@ -25,10 +25,10 @@ public class PartitionLabels {
     public static void main(String[] args){
         
     }
-}
 
-class Solution {
-//    public List<Integer> partitionLabels(String S) {
-//
-//    }
+
+    class Solution {
+
+    }
+
 }

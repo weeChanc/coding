@@ -1,6 +1,4 @@
-package com.wc.leecode.middle.e814;
-
-import javax.swing.tree.TreeNode;
+package com.wc.leecode.middle;
 
 /**
  * We are given the head node root of a binary tree, where additionally every node's value is either a 0 or a 1.
@@ -22,13 +20,10 @@ import javax.swing.tree.TreeNode;
  * Input: [1,0,1,0,0,0,1]
  * Output: [1,null,1,null,1]
  *
- * –ﬁºıµÙ√ª”–∞¸∫¨1µƒ◊” ˜
  */
 
 
-
-
-public class BinaryTreePruning {
+public class ‰∫åÂèâÊ†ë‰øÆÂâ™ {
     public static void main(String[] args){
         Solution.TreeNode root  = new Solution.TreeNode(1);
         root.left = null;
@@ -39,23 +34,25 @@ public class BinaryTreePruning {
         Solution.TreeNode node = new Solution().pruneTree(root);
         System.out.println(node);
     }
-}
 
 
-class Solution {
+    static class Solution {
 
-    static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-        TreeNode(int x) { val = x; }
+        static class TreeNode {
+            int val;
+            TreeNode left;
+            TreeNode right;
+            TreeNode(int x) { val = x; }
+        }
+
+        public TreeNode pruneTree(TreeNode root) {
+            if(root == null) return null;
+            root.left = pruneTree(root.left);
+            root.right = pruneTree(root.right);
+            return root.val == 1 || root.left != null || root.right != null? root:null;
+
+        }
     }
 
-    public TreeNode pruneTree(TreeNode root) {
-        if(root == null) return null;
-        root.left = pruneTree(root.left);
-        root.right = pruneTree(root.right);
-        return root.val == 1 || root.left != null || root.right != null? root:null;
-
-    }
 }
+
